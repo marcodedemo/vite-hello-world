@@ -2,6 +2,8 @@
 /* --------------------------------- script --------------------------------- */
 <script>
   import AppTitle from "./components/AppTitle.vue";
+  import AppHero from "./components/AppHero.vue";
+
 
   export default {
     data(){
@@ -12,6 +14,7 @@
 
     components: {
       AppTitle,
+      AppHero,
     }
   }
 </script>
@@ -20,12 +23,24 @@
 /* -------------------------------- template -------------------------------- */
 <template>
 
-  <AppTitle></AppTitle>
+  <div id="container">
+    
+    <AppTitle></AppTitle>
+    <AppHero></AppHero>
+    
+  </div>
 
 </template>
 
 
 /* ---------------------------------- style --------------------------------- */
-<style>
+<style >
 
+  #container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+  }
+  
 </style>
